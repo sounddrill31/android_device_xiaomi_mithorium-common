@@ -6,10 +6,6 @@
 
 TARGET_USES_XIAOMI_MITHORIUM_COMMON_TREE := true
 
-# APEX (Must be set before product makefile inclusions below)
-OVERRIDE_TARGET_FLATTEN_APEX := true
-OVERRIDE_PRODUCT_COMPRESSED_APEX := false
-
 #
 # All components inherited here go to system image
 #
@@ -114,6 +110,9 @@ endif
 MITHORIUM_PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant@1.0.vendor
+
+# APEX
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Audio
 MITHORIUM_PRODUCT_PACKAGES += \
