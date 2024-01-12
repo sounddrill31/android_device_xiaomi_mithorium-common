@@ -124,6 +124,7 @@ MITHORIUM_PRODUCT_PACKAGES += \
 
 MITHORIUM_PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    audio.primary.msm8937 \
     audio.r_submix.default \
     audio.usb.default
 
