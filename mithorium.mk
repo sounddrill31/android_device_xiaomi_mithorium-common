@@ -432,8 +432,8 @@ MITHORIUM_PRODUCT_PACKAGES += \
 endif
 
 # USB HAL
-MITHORIUM_PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
+#MITHORIUM_PRODUCT_PACKAGES += \
+#    android.hardware.usb@1.0-service.basic
 
 # Tethering
 MITHORIUM_PRODUCT_PACKAGES += \
